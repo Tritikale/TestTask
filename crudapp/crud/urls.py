@@ -1,9 +1,9 @@
 from django.urls import path
 from rest_framework import routers
-from .api import TaskListView
+from .api import TaskViewset
 
 
 router = routers.DefaultRouter()
-router.register('task', TaskListView, 'task')
+router.register('task', TaskViewset, 'task')
 
 urlpatterns = router.urls
